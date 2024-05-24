@@ -42,75 +42,75 @@ classDiagram
 
 ### Classes e Interfaces correspondentes em Java
 ```java
-public interface ReprodutorMusical {
-    void tocar();
-    void pausar();
-    void selecionarMusica(String musica);
+public interface MusicPlayer {
+    void play();
+    void pause();
+    void selectMusic(String music);
 }
 
-public class ReprodutorMusicalImpl implements ReprodutorMusical {
+public class MusicPlayerImpl implements MusicPlayer {
     @Override
-    public void tocar() {
+    public void play() {
         // Implementação para tocar a música
     }
 
     @Override
-    public void pausar() {
+    public void pause() {
         // Implementação para pausar a música
     }
 
     @Override
-    public void selecionarMusica(String musica) {
+    public void selectMusic(String music) {
         // Implementação para selecionar uma música específica
     }
 }
 ```
 
 ```java
-public interface AparelhoTelefonico {
-    void ligar(String numero);
-    void atender();
-    void iniciarCorreioVoz();
+public interface Telephone {
+    void call(String number);
+    void answer();
+    void startVoiceMail();
 }
 
-public class AparelhoTelefonicoImpl implements AparelhoTelefonico {
+public class TelephoneImpl implements Telephone {
     @Override
-    public void ligar(String numero) {
+    public void call(String number) {
         // Implementação para fazer uma ligação para o número especificado
     }
 
     @Override
-    public void atender() {
+    public void answer() {
         // Implementação para atender uma chamada
     }
 
     @Override
-    public void iniciarCorreioVoz() {
+    public void startVoiceMail() {
         // Implementação para iniciar o correio de voz
     }
 }
 ```
 
 ```java
-public interface NavegadorInternet {
-    void exibirPagina(String url);
-    void adicionarNovaAba();
-    void atualizarPagina();
+public interface WebBrowser {
+    void displayPage(String url);
+    void addNewTab();
+    void refreshPage();
 }
 
-public class NavegadorInternetImpl implements NavegadorInternet {
+public class WebBrowserImpl implements WebBrowser {
     @Override
-    public void exibirPagina(String url) {
+    public void displayPage(String url) {
         // Implementação para exibir uma página web através da URL
     }
 
     @Override
-    public void adicionarNovaAba() {
+    public void addNewTab() {
         // Implementação para adicionar uma nova aba no navegador
     }
 
     @Override
-    public void atualizarPagina() {
+    public void refreshPage() {
         // Implementação para atualizar a página web atual
     }
 }
